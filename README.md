@@ -4,15 +4,17 @@
 
 # Как использовать
 
-Функция  get_roots(a, b, c) принимает 3 аргумента являющиеся коэффициентами квадратного уравнения и возвращает действиетльные корни, елси они есть, в противном случае возвращает кортеж (None, None).
+Функция  get_roots(a, b, c) принимает 3 аргумента являющиеся коэффициентами квадратного уравнения и возвращает действиетльные корни, если они есть, в противном случае возвращает кортеж (None, None).
 
 Импорт модуля и вызов функции:
 
-    import quadratic_equation
-    
-    a, b, c = [int(i) for i in input('Enter the coefficients of the equation split by space: ').split() if i.lstrip('-+').isdigit()]
-    print(*quadratic_equation.get_roots(a, b, c))
-    
+```bash
+import quadratic_equation
+
+coeffs_list = input('Enter the coefficients of the equation split by space: ').split()
+a, b, c = [int(coeff) for coeff in coeffs_list if coeff.lstrip('-+').isdigit()]
+print(*quadratic_equation.get_roots(a, b, c))
+```
     
 # Как запустить
 
