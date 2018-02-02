@@ -8,7 +8,7 @@
 
 Импорт модуля и вызов функции:
 
-```bash
+```python
 import quadratic_equation
 
 coeffs_list = input('Enter the coefficients of the equation split by space: ').split()
